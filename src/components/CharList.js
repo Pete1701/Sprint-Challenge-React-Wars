@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CharCard from "./CharCard";
+import './CharList.css';
+//import { Card } from "reactstrap";
 
 function CharList() {
     const [char, setChar] = useState([]);
@@ -21,7 +23,7 @@ function CharList() {
                 return (
                     <CharCard
                         name={item.name}
-                        birth_year={item.birth_year}                        
+                        birth_year={item.birth_year}               
                     />
                 );
             })}

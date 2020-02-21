@@ -1,11 +1,13 @@
 import React from 'react';
+import './CharCard.css';
+import { Card, CardText, CardTitle } from "reactstrap";
 
 const CharCard = props => {
     return (
-      <div>
-        <h3>{props.name}</h3>
-        <p>{props.birth_year}</p>
-      </div>
+      <Card className='card'>
+        <CardTitle>Name: {props.name}</CardTitle>
+        <CardText>Year: {props.birth_year}</CardText>
+      </Card>
     );
 };
 

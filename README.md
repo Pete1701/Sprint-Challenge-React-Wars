@@ -1,68 +1,101 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sprint Challenge: React - Star Wars
 
-## Available Scripts
+This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored ReactJS, Function Components, component state and side effects. In your challenge for this Sprint, you will demonstrate proficiency by creating an application that uses ReactJS to consume live data retrieved from the World Wide Web and style that data nicely on the page.
 
-In the project directory, you can run:
+## Instructions
 
-### `yarn start`
+**Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your work reflects your proficiency with ReactJS Fundamentals and your command of the concepts and techniques in the Functional Components.
 
-### `yarn test`
+You have three hours to complete this challenge. Plan your time accordingly.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Commits
 
-### `yarn build`
+Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons and your Team Lead.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Description
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+In this challenge, create a web page that presents a styled list of Star Wars characters. Being able to render out data to a web page is a large part of what JavaScript developers do, this challenge assesses your ability to achieve such a task.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Self-Study/Essay Questions
 
-### `yarn eject`
+Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React is a JavaScript library that is used for building user interfaces and applications. It is used for handling the "View" aspect for web and mobile apps. React also allows us to create reusable UI components. In addition to regular JavaScript, it also uses JSX, which uses HTML tags and syntax and actually looks a lot like plain HTML. All these make the code when using React simpler, reusable and easier to implement. React also uses the Virtual DOM which is a light representation of the actual DOM. Every change and update is first made in the Virtual DOM and by comparing it with it's state before update, React knows what has been changed and only these changes finally implements to the actual DOM. In this way the entire DOM is updated much less than usual, and only the necessary parts gets updated. This makes React very fast and efficient in using resources.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [ ] What does it mean to _think_ in react?
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+It means to think about a webpage or app in terms of components, ie modules of code that do or render a single thing, or a single logical part of our page. It means to split the UI into independent, reusable pieces, and think about each piece seperately.
 
-## Learn More
+- [ ] Describe state.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+State is the set of data that describe and ultimately renders a React component. When state changes, the component re-renders according to the new state. We manipulate state in order to make changes to the component.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [ ] Describe props.
 
-### Code Splitting
+Props are properties of the React components. Props are passed to the component from the parent component. They are passed into the React component like the arguments that are passed in a function and based on them (props) is what appears on the screen.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
 
-### Analyzing the Bundle Size
+A side effect is anything that affects something outside the scope of the function that is being executed. Syncing side effects is making them run in sync with the state and prop changes we want. This is done by passing a dependency array as an argument in the effect hook function. In this way the side effect fires only when the conditions of the dependency array are met, and not with every state or prop changes (this could possibly drive us into an infinite loop).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Project Set Up
 
-### Making a Progressive Web App
+Follow these steps to set up and work on your project:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- [ ] Create a forked copy of this project.
+- [ ] Add TL as collaborator on Github.
+- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
+- [ ] Once you have installed the _node_modules_, run `yarn start` or `npm start` to get your server up and running.
+- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
+Follow these steps for completing your project.
+- [ ] Implement the project on this Branch, **committing progress & changes often.**
+- [ ] Push commits: `git push origin <firstName-lastName>`.
 
-### Advanced Configuration
+Follow these steps for completing your project:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ ] Add your Project Manager as a Reviewer on the Pull-request.
+- [ ] TL then will count the HW as done by merging the branch back into master.
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## Minimum Viable Product
 
-### `yarn build` fails to minify
+Your finished project must include all of the following requirements:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
+- [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people).
+- [ ] Set the data you fetch to state.
+- [ ] Map over the list and render a component for each character on the page.
+- [ ] You must display at least one element for each star wars character in the data set.
+- [ ] The elements must be styled with either Reactstrap or styled-components - don't rely on browser default styles.
+
+#### Required best practices:
+
+- [ ] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
+- [ ] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
+- [ ] Consistent quotation usage.
+- [ ] Spell-check.
+- [ ] Schedule time to review, refine and reassess your work.
+
+
+It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
+
+## Stretch Problems
+- [ ] Next week we will be looking at React forms. Look a head and try to create a search form that will filter through the data displayed from your characters. 
+
+- [ ] Build a pagination system that will allow you to load the next page of data.
+  - `console.log()` the data coming back from the server.
+  - Notice that there are `next` and `previous` fields that give you a URL.
+  - You can build a function that will get characters called `getCharacters` that you can use dynamically to get the next or previous set of characters. You would need to supply it with the proper fields, and you'll need to set up more state to do this.
+
+<!--
+- [ ] Build another app from scratch that looks very similar to this one. Inside of your main `App` component fetch some data in this same fashion from this url `https://dog.ceo/dog-api/#all` you'll have to follow the documentation at that website and figure out how to change up the code you've seen here in this Star Wars app in order to properly fetch the data and store it on Component State.
+-->
