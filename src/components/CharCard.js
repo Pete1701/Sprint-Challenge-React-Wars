@@ -5,8 +5,8 @@ import { Card, CardText, CardTitle } from "reactstrap";
 const CharCard = props => {
     return (
       <Card className='card'>
-        <CardTitle>Name: {props.name}</CardTitle>
-        <CardText>Year: {props.birth_year}</CardText>
+        <CardTitle className='name'>Name: {props.name}</CardTitle>
+        <CardText className='text'>Year: {props.birth_year}</CardText>
       </Card>
     );
 };

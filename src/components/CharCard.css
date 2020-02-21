@@ -3,3 +3,13 @@
     align-items: center;
     background-color: sandybrown;
 }
+
+.name {
+    justify-content: center;
+    color: yellow;
+    font-size: 1.2rem;    
+}
+
+.text {
+    color: rgb(49, 78, 105);
+}
